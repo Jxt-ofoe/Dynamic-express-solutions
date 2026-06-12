@@ -192,6 +192,64 @@
       desc: "Locating and eradicating cockroach nesting grounds inside residential kitchen cabinets in Accra.",
       image: "images/pest-cockroach-cabinet.jpg",
       alt: "Cockroaches infesting kitchen cabinets before treatment"
+    },
+
+    /* ---- Added locally uploaded gallery images (DO NOT REPLACE EXISTING) ---- */
+    {
+      id: "des_gal_8",
+      category: "pest",
+      title: "Pest Control Photo 1",
+      desc: "Recent pest control work captured in our service gallery.",
+      image: "images/1.jpg",
+      alt: "Dynamic Express Solutions pest control service photo 1"
+    },
+    {
+      id: "des_gal_9",
+      category: "clean",
+      title: "Cleaning Photo 2",
+      desc: "Recent professional cleaning work captured in our service gallery.",
+      image: "images/2.jpg",
+      alt: "Dynamic Express Solutions cleaning service photo 2"
+    },
+    {
+      id: "des_gal_10",
+      category: "sofa",
+      title: "Sofa & Upholstery Photo 3",
+      desc: "Recent sofa/upholstery cleaning work captured in our service gallery.",
+      image: "images/3.jpg",
+      alt: "Dynamic Express Solutions sofa and upholstery cleaning photo 3"
+    },
+    {
+      id: "des_gal_11",
+      category: "post",
+      title: "Post-Construction Photo 4",
+      desc: "Recent post-construction cleaning work captured in our service gallery.",
+      image: "images/4.jpg",
+      alt: "Dynamic Express Solutions post-construction cleaning photo 4"
+    },
+    {
+      id: "des_gal_12",
+      category: "pest",
+      title: "Pest Control Photo 5",
+      desc: "Recent pest control work captured in our service gallery.",
+      image: "images/5.jpg",
+      alt: "Dynamic Express Solutions pest control service photo 5"
+    },
+    {
+      id: "des_gal_13",
+      category: "clean",
+      title: "Cleaning Photo 6",
+      desc: "Recent professional cleaning work captured in our service gallery.",
+      image: "images/6.jpg",
+      alt: "Dynamic Express Solutions cleaning service photo 6"
+    },
+    {
+      id: "des_gal_14",
+      category: "post",
+      title: "Post-Construction Photo 7",
+      desc: "Recent post-construction cleaning work captured in our service gallery.",
+      image: "images/7.jpg",
+      alt: "Dynamic Express Solutions post-construction cleaning photo 7"
     }
   ];
 
