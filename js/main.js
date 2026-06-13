@@ -228,58 +228,98 @@
     {
       id: "des_gal_8",
       category: "pest",
-      title: "Pest Control Photo 1",
+      title: "Pest Control ",
       desc: "Recent pest control work captured in our service gallery.",
       image: "images/1.jpg",
-      alt: "Dynamic Express Solutions pest control service photo 1"
+      alt: "Dynamic Express Solutions pest control service"
     },
     {
       id: "des_gal_9",
       category: "clean",
-      title: "Cleaning Photo 2",
+      title: "Cleaning ",
       desc: "Recent professional cleaning work captured in our service gallery.",
       image: "images/2.jpg",
-      alt: "Dynamic Express Solutions cleaning service photo 2"
+      alt: "Dynamic Express Solutions cleaning service"
     },
     {
       id: "des_gal_10",
       category: "sofa",
-      title: "Sofa & Upholstery Photo 3",
+      title: "Sofa & Upholstery ",
       desc: "Recent sofa/upholstery cleaning work captured in our service gallery.",
       image: "images/3.jpg",
-      alt: "Dynamic Express Solutions sofa and upholstery cleaning photo 3"
+      alt: "Dynamic Express Solutions sofa and upholstery cleaning "
     },
     {
       id: "des_gal_11",
       category: "post",
-      title: "Post-Construction Photo 4",
+      title: "Post-Construction ",
       desc: "Recent post-construction cleaning work captured in our service gallery.",
       image: "images/4.jpg",
-      alt: "Dynamic Express Solutions post-construction cleaning photo 4"
+      alt: "Dynamic Express Solutions post-construction cleaning "
     },
     {
       id: "des_gal_12",
       category: "pest",
-      title: "Pest Control Photo 5",
+      title: "Pest Control ",
       desc: "Recent pest control work captured in our service gallery.",
       image: "images/5.jpg",
-      alt: "Dynamic Express Solutions pest control service photo 5"
+      alt: "Dynamic Express Solutions pest control service "
     },
     {
       id: "des_gal_13",
       category: "clean",
-      title: "Cleaning Photo 6",
+      title: "Cleaning ",
       desc: "Recent professional cleaning work captured in our service gallery.",
       image: "images/6.jpg",
-      alt: "Dynamic Express Solutions cleaning service photo 6"
+      alt: "Dynamic Express Solutions cleaning service "
     },
     {
       id: "des_gal_14",
       category: "post",
-      title: "Post-Construction Photo 7",
+      title: "Post-Construction ",
       desc: "Recent post-construction cleaning work captured in our service gallery.",
       image: "images/7.jpg",
-      alt: "Dynamic Express Solutions post-construction cleaning photo 7"
+      alt: "Dynamic Express Solutions post-construction cleaning "
+    },
+    {
+      id: "des_gal_15",
+      category: "pest",
+      title: "Pest control",
+      desc: "Recent pest control work captured in our service gallery.",
+      image: "images/photo_2026-06-13_03-29-00.jpg",
+      alt: "Dynamic Express Solutions pest control"
+    },
+    {
+      id: "des_gal_16",
+      category: "pest",
+      title: "Pest control",
+      desc: "Recent pest control work captured in our service gallery.",
+      image: "images/photo_2026-06-13_03-29-04.jpg",
+      alt: "Dynamic Express Treatment of Vessels and Containers at Tema Habour "
+    },
+    {
+      id: "des_gal_17",
+      category: "pest",
+      title: "Pest control",
+      desc: "Recent pest control work captured in our service gallery.",
+      image: "images/photo_2026-06-13_03-29-07.jpg",
+      alt: "Dynamic Express Treatment of Vessels and Containers at Tema Habour "
+    },
+    {
+      id: "des_gal_18",
+      category: "pest",
+      title: "Pest control",
+      desc: "Recent pest control work captured in our service gallery.",
+      image: "images/photo_2026-06-13_03-29-11.jpg",
+      alt: "Dynamic Express Fogging in open spaces "
+    },
+    {
+      id: "des_gal_19",
+      category: "pest",
+      title: "Pest control",
+      desc: "Recent pest control work captured in our service gallery.",
+      image: "images/photo_2026-06-13_03-29-15.jpg",
+      alt: "Dynamic Express fly count at food processing canter "
     }
   ];
 
