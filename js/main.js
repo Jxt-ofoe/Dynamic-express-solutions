@@ -67,27 +67,57 @@
       }
 
       if (firstInvalid) {
-        status.textContent = "⚠️ Please fill in the highlighted fields correctly.";
+        status.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Please fill in the highlighted fields correctly.';
         status.className = "form-status err";
         firstInvalid.focus();
         return;
       }
 
-      /* Front-end only: simulate a successful submission.
-         In production, replace this block with a fetch() POST to your
-         backend endpoint or a form service (e.g. Formspree). */
+      var nameVal = form.querySelector("#name").value.trim();
+      var phoneVal = form.querySelector("#phone").value.trim();
+      var emailVal = (form.querySelector("#email").value || "").trim();
+      var locationVal = form.querySelector("#location").value;
+      var serviceVal = form.querySelector("#service").value;
+      var msgVal = form.querySelector("#message").value.trim();
+
+      var serviceMap = {
+        "pest-control": "Pest Control / Fumigation",
+        "cleaning": "Professional Cleaning",
+        "both": "Both — Pest Control + Cleaning"
+      };
+      var locationMap = {
+        "tema": "Tema",
+        "accra": "Accra",
+        "kumasi": "Kumasi",
+        "other": "Other (anywhere in Ghana)"
+      };
+
+      var serviceLabel = serviceMap[serviceVal] || serviceVal;
+      var locationLabel = locationMap[locationVal] || locationVal;
+      var emailText = emailVal ? emailVal : "Not provided";
+
+      var textMessage = "*NEW SERVICE REQUEST — DYNAMIC EXPRESS SOLUTIONS*\n\n" +
+        "👤 *Name:* " + nameVal + "\n" +
+        "📞 *Phone:* " + phoneVal + "\n" +
+        "✉️ *Email:* " + emailText + "\n" +
+        "📍 *Location:* " + locationLabel + "\n" +
+        "🛡️ *Service:* " + serviceLabel + "\n\n" +
+        "💬 *Message/Problem:* \n" + msgVal;
+
+      var waUrl = "https://wa.me/233243527009?text=" + encodeURIComponent(textMessage);
+
       var btn = form.querySelector('button[type="submit"]');
       btn.disabled = true;
-      btn.textContent = "Sending…";
+      btn.innerHTML = 'Connecting to WhatsApp <i class="fa-brands fa-whatsapp"></i>';
 
       setTimeout(function () {
-        status.textContent =
-          "✅ Thank you! Your request has been received. Our team will contact you shortly.";
+        window.open(waUrl, "_blank");
+        status.innerHTML = '<i class="fa-solid fa-circle-check"></i> Redirecting to WhatsApp to send your request...';
         status.className = "form-status ok";
         form.reset();
         btn.disabled = false;
-        btn.textContent = "Send Request 🚀";
-      }, 900);
+        btn.innerHTML = 'Send Request <i class="fa-brands fa-whatsapp"></i>';
+      }, 800);
     });
 
     // Clear error styling as the user types
