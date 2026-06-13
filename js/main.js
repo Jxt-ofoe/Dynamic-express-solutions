@@ -130,7 +130,8 @@
 
   /* ---------- 3. Scroll-reveal animations (IntersectionObserver) ---------- */
   var revealTargets = document.querySelectorAll(
-    ".gallery-card, .service-card, .why-card, .location-card, .contact-form, .contact-info, .work-gallery-item"
+    ".gallery-card, .service-card, .why-card, .location-card, .contact-form, .contact-info, .work-gallery-item, .review-card"
+
   );
 
   if ("IntersectionObserver" in window) {
@@ -157,9 +158,27 @@
     var onScroll = function () {
       backToTop.classList.toggle("show", window.scrollY > 600);
     };
+
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
+
+    // Make click reliable even if smooth-anchor behavior changes or click is intercepted.
+    backToTop.addEventListener("click", function (e) {
+      e.preventDefault();
+      try {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } catch (err) {
+        window.scrollTo(0, 0);
+      }
+
+      // Move focus for accessibility after scroll.
+      backToTop.setAttribute("tabindex", "-1");
+      window.setTimeout(function () {
+        backToTop.blur();
+      }, 250);
+    });
   }
+
 
   /* ---------- 5. Dynamic copyright year ---------- */
   var yearEl = document.getElementById("year");
